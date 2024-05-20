@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: green;
+  }
+  li {
+    float: left;
+    width: 100px;
+    height: 40px;
+    background: red;
+  }
+  .outer::after {
+    clear: both;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+  }
+</style>
+<body>
+  <ul class="outer">
+    <li>l1</li>
+    <li>l2</li>
+    <li>l3</li>
+  </ul>
+</body>
+</html>
